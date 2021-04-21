@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #EDF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+.container{
+    max-width: 1110px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 24px;
+    grid-auto-flow: column;
+}
+
+.card1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 540px;
+    border-radius: 10px;
+    background-color: #733FC8;
+    padding: 24px 32px 32px;
+    color: #FFF;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 80px;
+}
+
+.card2{
+    border-radius: 10px;
+    background-color: #49556B;
+    padding: 24px 32px 32px;
+    color: #FFF;
+}
+
+.card3{
+    border-radius: 10px;
+    background-color: #FFF;
+    padding: 24px 32px 32px;
+    color: #000;
+}
+.card4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color: #171F2C;
+    padding: 24px 32px 32px;
+    color: #FFF;
+}
+.card5{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px;
+    background-color: #FFF;
+    padding: 24px 32px 32px;
+    color: #000;
+}
+
+.contact{
+    display: flex;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #A775F1;
+    margin-right: 16px;
+}
+.name{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    line-height: 18px;
+}
+
+.grado{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    opacity: 50%;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 16px 0;
+}
+
+.paragraph{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 70%;
+    padding-right: 7px;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .grid{
+        padding: 70px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1{
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 right 20px;
+    }
+}
